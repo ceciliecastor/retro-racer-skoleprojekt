@@ -1,0 +1,88 @@
+/* resets */
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Valg af font og farve til overskrift */
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Definerer spillets størrelse og placering */
+.game{
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* Scenens størrelse, baggrundsbilledet og skjul det der er uden for scenen */
+.scene{
+    height: 480px;
+    background-image: url(road.png);
+    background-size: 400px;
+    position: relative;
+    overflow: hidden;
+}
+/* Defination af spillets aktive baggrunds animation*/
+.scene-active{
+    animation: drive 2s infinite linear;
+}
+
+/* Start placering af spillerens avatar */
+.sprite1{
+    position: absolute;
+    bottom: 50px;
+    left: 170px;
+}
+
+/* Animation af spillets aktive baggrund */
+@keyframes drive{
+    from{background-position-y: 0;}
+    to{background-position-y: 240px;}
+}
+
+/* teksten på spillets skærmen */
+.screen-text{
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    height:100%;
+    width:100%;
+    font-size:40px;
+    background-color: rgba(red 0, green 0, blue 0, alpha 0.5);
+    align-items:center;
+    align-content:center;
+    justify-content:center;
+    color:orange;
+    cursor:pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:800;
+}
+
+/* Placering af spillets fjende */
+.sprite-enemy1{
+    position:absolute;
+    top:-200px;
+    left:0;
+}
+
+/* Defination af animationen af spillets fjende */
+.enemy-active{
+    animation: enemy 2.5s infinite linear;
+}
+
+/* Animation af spillets fjende */
+@keyframes enemy{
+    from{top: -200px;}
+    to{top: 480px;}
+}

@@ -1,0 +1,33 @@
+<!-- Startside for spillet -->
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racer Retro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Lydfilen med ID -->
+    <audio id="audio" src="8bit-crash.mp3" controls></audio>
+    <!-- Viser points -->
+    <div class="game">score-container
+        <h1>Racer Retro</h1>
+        <p class="score-container">
+            <!-- Brug af span tag til at lave en inline container -->
+            <span>Score:</span>
+            <span id="score">0</span>
+        </p>
+        <div class="scene">
+            <div class="screen-text">Start Game!</div>
+            <img src="sprite1.png" alt="" class="sprite1">
+            <img src="sprite-enemy1.png" alt="" class="sprite-enemy1">
+        </div>
+        <div class="controls">
+            <input type="range" name="" id="wheel" min="1" max="8">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

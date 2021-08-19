@@ -1,0 +1,34 @@
+<!-- Start siden -->
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racer Retro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        <h1>Racer Retro</h1>
+        <form id="setup" action="game.html">
+            <!-- valg af bil ved at bruge input Radio -->
+            <h3>Vælg bil</h3>
+            <label for="porsche">
+                Silver Porche 
+                <img src="/sprite1.png" alt="">
+            </label>
+            <input type="radio" name="car" id="porsche" value="sprite1.png">
+            <br>
+            <label for="cadillac">
+                Pink Cadillac 
+                <img src="/sprite2.png" alt="">
+            </label>
+            <input type="radio" name="car" id="cadillac" value="sprite2.png">
+            <br>
+            <input type="submit" value="Go!">
+        </form>
+    </div>
+    
+</body>
+</html>
